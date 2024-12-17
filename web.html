@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eines per l'Aula</title>
+    <link rel="stylesheet" href="web.css">
+</head>
+<body>
+    <header>
+        <h1>Eines per l'Aula</h1>
+        <button id="toggle-mode">Canvia a Mode Fosc</button>
+    </header>
+
+    <main>
+        <!-- Ruleta de noms -->
+        <section id="ruleta-noms">
+            <h2>Ruleta de Noms</h2>
+            <button id="load-names">Carrega Noms</button>
+            <div id="wheel-container">
+                <canvas id="wheel" width="500" height="500"></canvas>
+            </div>
+            <button id="spin-wheel">Gira la Ruleta</button>
+            <p id="selected-name"></p>
+        </section>
+
+        <!-- Rellotge-Temporitzador -->
+        <section id="rellotge-temporitzador">
+            <h2>Rellotge-Temporitzador</h2>
+            <div id="timer-controls">
+                <input type="number" id="minutes" placeholder="Minuts">
+                <input type="number" id="seconds" placeholder="Segons">
+                <button id="start-timer">Inicia</button>
+                <button id="reset-timer">Reinicia</button>
+            </div>
+            <p id="timer-display">00:00</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Eines per l'Aula</p>
+    </footer>
+    
+    <script src="ruleta-noms.js"></script>
+    <script src="rellotge-temporitzador.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
